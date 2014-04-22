@@ -2296,4 +2296,14 @@ li span.dots {
 			clear:both;
 			}
 				
-}				
+.foot{
+			width:100%;
+			}			
+.left{
+				float:left;
+				width:44%;
+				}
+.right{
+			float:left;
+			width:44%;		
+				}

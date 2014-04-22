@@ -1,0 +1,538 @@
+/*
+Theme Name: Storyline
+Theme URI: http://storylinetheme.com
+Author: Anthony Hortin
+Author URI: http://maddisondesigns.com/
+Description: Storyline is your basic building block for creating beautiful, responsive custom themes. It's not a convoluted or confusing framework that's hard to learn or even harder to modify. It's a simple and elegant starter theme built on HTML5 & CSS3. Its base is a responsive, 12 column grid. It incorporates custom Theme Options that are easy to modify, a set of common templates, support for WordPress Post Formats and the gorgeous, retina friendly Font Awesome icon font.
+Version: 1.2.9
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, gray, dark, light, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
+Text Domain: storyline
+*/
+
+
+/* ==========================================================================
+   Basic page styles
+   ========================================================================== */
+
+body { 
+	
+	text-align: right;
+	
+}
+
+/* Header */
+
+.alignleft {
+	
+	float: right;
+	margin: 0 0 16px 20px;
+	margin: 0 0 1rem 1.25rem;
+}
+
+.alignright {
+	
+	float: left;
+	margin: 0 20px 16px 0;
+	margin: 0 1.25rem 1rem 0;
+}
+
+
+
+blockquote {
+	border-right: 5px solid #333;
+	border-left: none;
+	margin: 0 20px 18px 0;
+	margin: 0 1.25rem 1.125rem 0;
+	padding: 0 16px 0 0;
+	padding: 0 1rem 0 0;
+}
+
+blockquote.pull-right {
+	border-right: 0 none;
+	border-left: 5px solid #333;
+	margin: 0 0 18px 20px ;
+	margin: 0 0 1.125rem 1.25rem;
+	padding: 0 0 0 16px;
+	padding: 0 0 0 1rem;
+}
+
+
+blockquote.pull-right p, blockquote.pull-right small {
+	text-align: leftt;
+}
+
+caption,
+th,
+td {
+	
+	text-align: right;
+}
+
+/* Text meant only for screen readers */
+
+
+.menu-toggle,
+.btn,
+input[type="submit"] {
+	
+	
+	*margin-right: .3em;
+	*margin-left: 0em;
+
+}
+
+/* ==========================================================================
+   Site specific styles
+   ========================================================================== */
+
+#wrapper {
+	
+	text-align: right;
+}
+
+.logo-left{
+    float:right;
+}
+
+.logo-right h1 a{
+    margin-right:20px;
+	margin-left:0px;
+}
+
+.logo-right p{
+    margin-right:6%;
+	margin-left:0px;
+}
+
+
+/* Social Media icons */
+.social-media-icons {
+	float: left;
+	
+}
+
+.social-media-icons li {
+	
+	margin: 0.1em 0.6em 0 0;
+	
+	text-align: right;
+}
+
+
+/* ==========================================================================
+   Main Content
+   ========================================================================== */
+
+
+.comments-link {
+	
+	float: left;
+}
+
+
+.post-categories a,
+.post-tags a {
+	
+	margin: 0 0 0 3px;
+	margin: 0 0 0 0.1875rem;
+	
+}
+
+
+.entry-content td,
+.comment-content td {
+	
+	padding: 6px 0 6px 10px;
+	padding: 0.375rem 0 0.375rem 0.625rem;
+}
+
+.entry-content li,
+.comment-content li {
+	margin: 0 28px 0 0;
+	margin: 0 1.75rem 0 0;
+}
+
+/* Author profiles */
+
+.author-avatar {
+	float: right;
+	
+}
+
+.author-description {
+	float: left;
+	
+}
+
+.social-meta a {
+	
+	margin-left: 5px;
+	margin-right: 0px;
+	margin-left: 0.3125rem;
+	margin-right: 0rem;
+}
+
+
+/* Status */
+.format-status .entry-content {
+	border-right: 5px solid #ddd;
+	border-left: 0;
+	
+	padding: 0 15px 0 0;
+	padding: 0 0.9375rem 0 0;
+}
+
+/* Quote */
+.format-quote .entry-content blockquote:before {
+	
+	right: 0;
+	left:auto;
+	
+}
+
+.format-quote .entry-content blockquote {
+	border: none;
+	margin-right: 40px;
+	margin-left: 0px;
+	margin-right: 2.5rem;
+	margin-left: 0rem;
+}
+
+
+
+/* ==========================================================================
+   Comments
+   ========================================================================== */
+
+
+
+.
+
+.comments-area article header img {
+	float: right;
+	
+}
+
+.comments-area article header cite,
+.comments-area article header time {
+	display: block;
+	margin-right: 84px;
+	margin-left: 0px;
+	margin-right: 5.25rem;
+	margin-left: 0rem;
+}
+
+
+
+.comments-area article header h4 {
+	
+	left: 0;
+	right:auto;
+}
+
+.comments-area li.bypostauthor cite span {
+	
+	margin-right: 6px;
+	margin-left: 0px;
+	margin-right: 0.375rem;
+	margin-left: orem;
+	
+}
+
+.commentlist .children {
+	margin-right: 48px;
+	margin-left: 0px;
+	margin-right: 3rem;
+	margin-left: 0rem;
+}
+
+/* Comment form */
+
+#respond h3#reply-title #cancel-comment-reply-link {
+	margin-right: 12px;
+	margin-left: 0px;
+	margin-right: 0.75rem;
+	margin-left: 0rem;
+	
+}
+
+form label.error {
+	
+	border-right: 4px solid #bb0504;
+	border-left: 0;
+	}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+
+.footer-left{
+    float:right;
+   
+    }
+    
+  .footer-right{
+    float:left;
+    
+    }
+
+
+/* ==========================================================================
+   Widgets
+   ========================================================================== */
+
+
+.widget select {
+	margin-right: 1px;
+	border-left: 0px;
+	margin-right: 0.0625rem;
+	border-left: 0rem;
+}
+
+.widget-area .widget ul ul {
+	margin-right: 12px;
+	border-left: 0px;
+	margin-right: 0.75rem;
+	border-left: 0rem;
+}
+
+.widget_recent_entries .post-date,
+.widget_rss .rss-date {
+	margin-right: 12px;
+	border-left: 0px;
+	margin-right: 0.75rem;
+	border-left: 0rem;
+}
+
+
+#wp-calendar #next {
+	padding-left: 24px;
+	padding-right: 0px;
+	padding-left: 1.5rem;
+	padding-right: 0rem;
+	text-align: left;
+}
+
+
+
+.widget_twitter .timesince {
+	
+	text-align: left;
+}
+
+	
+.widget-area-right{
+	
+	float:left;
+}
+
+.widget-area-left{
+	
+	float:right;
+	padding-left:0;
+	padding-right: 6%;
+	}
+
+   .widget-area-3{
+      
+        margin-right: 4%;
+		margin-left: 0;
+   }
+  
+   
+   .widget-third-1,
+   .widget-third-2,
+   .widget-third-3,
+   .widget-third-4{
+       float:right;
+      
+   }
+	
+/* ==========================================================================
+   Content Navigation
+   ========================================================================== */
+
+
+
+.nav-previous,
+.previous-image {
+	float: right;
+	
+}
+.nav-next,
+.next-image {
+	float: left;
+	text-align: left;
+	
+}
+
+.nav-single + .comments-area,
+#comment-nav-above {
+	margin: 48px 0 48px 48px;
+	margin: 3rem 0 3rem 3rem;
+}
+
+/* ==========================================================================
+   Main Navigation
+   ========================================================================== */
+
+.main-navigation {
+	text-align: right;
+	float: left;
+	clear: left;
+	
+}
+
+.main-navigation li {
+	float: right;
+	
+	margin: 0 20px 0 0; /* Margin on the left side of each top level menu item (since it's floated right) */
+	margin: 0 1.25rem 0 0;
+}
+
+
+
+.main-navigation ul ul ul {
+	right: 100%;
+	left:auto;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/*  Breakpoints are set based on the design, not based on device sizes */
+
+
+
+
+@media only screen and (max-width: 800px) {
+	
+
+	
+	.social-media-icons {
+		
+		text-align: right;
+	}
+	.social-media-icons li {
+		margin: 0.1em 0 0 0.5em ;
+	}
+}
+
+/*  Go full Width at less than 650px */
+@media only screen and (max-width: 650px) {
+	
+	.main-small-navigation .nav-menu ul {
+		padding-right: 16px;
+		padding-left: 0px;
+		padding-right: 1rem;
+		padding-left: 0rem;
+	}
+}
+
+
+/*  Adjust the menu at less than 520px */
+
+
+@media only screen and (max-width: 320px) {
+	.author-description {
+		float: right;
+		
+	}
+}
+
+
+/* ==========================================================================
+   Non-semantic helper classes from HTML5 Boilerplate
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir {  text-align: right;  }
+
+
+
+
+/* ==========================================================================
+   Print styles from HTML5 Boilerplate
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  
+
+.home-widget1{
+				float:right;
+				
+				margin-right:15px;
+				margin-left:0px;
+				}
+.home-widget2{
+				float:right;
+				margin-right:15px;
+				margin-left:0px;
+				padding-right:10px;
+				padding-left:0;
+				}
+.home-widget3{
+				float:right;
+				margin-right:15px;
+				margin-left:0px;
+				padding-right:20px;
+				padding-left:0;
+				}	
+
+.place-widget2{
+
+	float:right;
+	}
+
+.storyline-box .home-widget1{
+				float:right;
+				margin-right:15px;
+				margin-left:0px;
+				
+				}
+.storyline-box .home-widget2{
+				float:right;
+				margin-right:15px;
+				margin-left:0px;
+				}
+.storyline-box .home-widget3{
+				float:right;
+				margin-right:15px;
+				margin-left:0px;
+				}				
+.storyline-box .main-navigation li{
+							margin:0 10px 0 0;
+							}
+						
+.grid_4_of_12 {
+								padding-right:30px;
+								padding-left: 0
+								}
+
+#meta-2.widget_meta {
+						margin-right:15px;
+						margin-left:0px;
+						}	
+#footercontainer:after{
+			content:'.';
+			visibility:hidden;
+			display:block;
+			clear:both;
+			}
+				
+		
+.left{
+				float:right;
+				
+				}
+.right{
+			float:right;
+					
+				}

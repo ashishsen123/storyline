@@ -47,25 +47,19 @@
 			<?php } ?>
 
 		</footer> <!-- /.site-footer.row -->
-		         <?php if (get_theme_mod('storyline_footer_footer_text') == '') { ?>
+
 			 <div class="foot">	
-            <div class="row smallprint left">
+            <div class="smallprint left">
                 <p>
                     <a href="<?php $my_theme = wp_get_theme(); echo $my_theme->get( 'ThemeURI' ); ?>">
                         <?php _e('storyline WordPress theme by IdeaBox', 'storyline'); ?>
                     </a>
                 </p>
             </div>
-        <?php } else { ?>   
-                    <div class="row smallprint right"><?php echo wpautop(get_theme_mod('storyline_footer_footer_text')); ?></div>
+      		         <?php if (get_theme_mod('storyline_footer_footer_text') != '') { ?> 
+                    <div class="smallprint right"><?php echo wpautop(get_theme_mod('storyline_footer_footer_text')); ?></div>
 			</div>		
         <?php } ?> 
-
-		<?php if ( of_get_option( 'footer_content', storyline_get_credits() ) ) {
-			echo '<div class="row smallprint">';
-			echo apply_filters( 'meta_content', wp_kses_post( of_get_option( 'footer_content', storyline_get_credits() ) ) );
-			echo '</div> <!-- /.smallprint -->';
-		} ?>
                
 	</div> <!-- /.footercontainer -->
 
