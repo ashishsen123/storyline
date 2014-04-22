@@ -14,6 +14,10 @@
 if ( ! isset( $content_width ) )
 	$content_width = 790; /* Default the embedded content width to 790px */
 
+	/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/customizer.php';
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -193,39 +197,10 @@ function storyline_widgets_init() {
 			'after_title' => '</h3>'
 		) );
 
-	register_sidebar( array(
-			'name' => esc_html__( 'Blog Sidebar', 'storyline' ),
-			'id' => 'sidebar-blog',
-			'description' => esc_html__( 'Appears in the sidebar on the blog and archive pages only', 'storyline' ),
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>'
-		) );
 
 	register_sidebar( array(
-			'name' => esc_html__( 'Single Post Sidebar', 'storyline' ),
-			'id' => 'sidebar-single',
-			'description' => esc_html__( 'Appears in the sidebar on single posts only', 'storyline' ),
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>'
-		) );
-
-	register_sidebar( array(
-			'name' => esc_html__( 'Page Sidebar', 'storyline' ),
-			'id' => 'sidebar-page',
-			'description' => esc_html__( 'Appears in the sidebar on pages only', 'storyline' ),
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>'
-		) );
-
-	register_sidebar( array(
-			'name' => esc_html__( 'First Front Page Banner Widget', 'storyline' ),
-			'id' => 'frontpage-banner1',
+			'name' => esc_html__( ' Front Page Banner Widget', 'storyline' ),
+			'id' => 'frontpage-banner',
 			'description' => esc_html__( 'Appears in the banner area on the Front Page', 'storyline' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
@@ -233,89 +208,94 @@ function storyline_widgets_init() {
 			'after_title' => '</h1>'
 		) );
 
-	register_sidebar( array(
-			'name' => esc_html__( 'Second Front Page Banner Widget', 'storyline' ),
-			'id' => 'frontpage-banner2',
+		register_sidebar( array(
+			'name' => esc_html__( ' Front Page home Widget1', 'storyline' ),
+			'id' => 'home-widget1',
 			'description' => esc_html__( 'Appears in the banner area on the Front Page', 'storyline' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
 			'before_title' => '<h1 class="widget-title">',
 			'after_title' => '</h1>'
 		) );
-
-	register_sidebar( array(
-			'name' => esc_html__( 'First Front Page Widget Area', 'storyline' ),
-			'id' => 'sidebar-homepage1',
-			'description' => esc_html__( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'storyline' ),
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>'
+		register_sidebar( array(
+			'name' => esc_html__( ' Front Page home Widget2', 'storyline' ),
+			'id' => 'home-widget2',
+			'description' => esc_html__( 'Appears in the banner area on the Front Page', 'storyline' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h1 class="widget-title">',
+			'after_title' => '</h1>'
 		) );
-
-	register_sidebar( array(
-			'name' => esc_html__( 'Second Front Page Widget Area', 'storyline' ),
-			'id' => 'sidebar-homepage2',
-			'description' => esc_html__( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'storyline' ),
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>'
+		register_sidebar( array(
+			'name' => esc_html__( ' Front Page home Widget3', 'storyline' ),
+			'id' => 'home-widget3',
+			'description' => esc_html__( 'Appears in the banner area on the Front Page', 'storyline' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h1 class="widget-title">',
+			'after_title' => '</h1>'
 		) );
-
-	register_sidebar( array(
-			'name' => esc_html__( 'Third Front Page Widget Area', 'storyline' ),
-			'id' => 'sidebar-homepage3',
-			'description' => esc_html__( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'storyline' ),
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>'
+		
+		register_sidebar( array(
+			'name' => esc_html__( ' place Page place Widget1', 'storyline' ),
+			'id' => 'place-widget1',
+			'description' => esc_html__( 'Appears in the banner area on the Front Page', 'storyline' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h1 class="widget-title">',
+			'after_title' => '</h1>'
 		) );
-
 	register_sidebar( array(
-			'name' => esc_html__( 'Fourth Front Page Widget Area', 'storyline' ),
-			'id' => 'sidebar-homepage4',
-			'description' => esc_html__( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'storyline' ),
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>'
+			'name' => esc_html__( ' place Page place Widget2', 'storyline' ),
+			'id' => 'place-widget2',
+			'description' => esc_html__( 'Appears in the banner area on the Front Page', 'storyline' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h1 class="widget-title">',
+			'after_title' => '</h1>'
 		) );
-
+		register_sidebar( array(
+			'name' => esc_html__( ' place Page place Widget3', 'storyline' ),
+			'id' => 'place-widget3',
+			'description' => esc_html__( 'Appears in the banner area on the Front Page', 'storyline' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h1 class="widget-title">',
+			'after_title' => '</h1>'
+		) );
+		register_sidebar( array(
+			'name' => esc_html__( ' place Page place Widget4', 'storyline' ),
+			'id' => 'place-widget4',
+			'description' => esc_html__( 'Appears in the banner area on the Front Page', 'storyline' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h1 class="widget-title">',
+			'after_title' => '</h1>'
+		) );
+		register_sidebar( array(
+			'name' => esc_html__( ' place Page place Widget5', 'storyline' ),
+			'id' => 'place-widget5',
+			'description' => esc_html__( 'Appears in the banner area on the Front Page', 'storyline' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h1 class="widget-title">',
+			'after_title' => '</h1>'
+		) );
+		register_sidebar( array(
+			'name' => esc_html__( ' place Page place Widget6', 'storyline' ),
+			'id' => 'place-widget6',
+			'description' => esc_html__( 'Appears in the banner area on the Front Page', 'storyline' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h1 class="widget-title">',
+			'after_title' => '</h1>'
+		) );
+		
+	
+	
 	register_sidebar( array(
-			'name' => esc_html__( 'First Footer Widget Area', 'storyline' ),
+			'name' => esc_html__( 'Footer Widget Area', 'storyline' ),
 			'id' => 'sidebar-footer1',
-			'description' => esc_html__( 'Appears in the footer sidebar', 'storyline' ),
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>'
-		) );
-
-	register_sidebar( array(
-			'name' => esc_html__( 'Second Footer Widget Area', 'storyline' ),
-			'id' => 'sidebar-footer2',
-			'description' => esc_html__( 'Appears in the footer sidebar', 'storyline' ),
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>'
-		) );
-
-	register_sidebar( array(
-			'name' => esc_html__( 'Third Footer Widget Area', 'storyline' ),
-			'id' => 'sidebar-footer3',
-			'description' => esc_html__( 'Appears in the footer sidebar', 'storyline' ),
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>'
-		) );
-
-	register_sidebar( array(
-			'name' => esc_html__( 'Fourth Footer Widget Area', 'storyline' ),
-			'id' => 'sidebar-footer4',
 			'description' => esc_html__( 'Appears in the footer sidebar', 'storyline' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
@@ -968,3 +948,17 @@ add_filter( 'meta_content', 'convert_smilies' );
 add_filter( 'meta_content', 'convert_chars'  );
 add_filter( 'meta_content', 'wpautop' );
 add_filter( 'meta_content', 'shortcode_unautop'  );
+
+/**
+ * Adds custom classes to the array of body classes.
+ */
+function storyline_body_classes( $classes ) {
+	// Adds a class of group-blog to blogs with more than 1 published author
+	
+	if(get_theme_mod('sidebar_position')){
+		 $slug = strtolower(get_theme_mod( 'sidebar_position' ));
+        $classes[] = 'storyline-'.$slug;
+	}
+	return $classes;
+}
+add_filter( 'body_class', 'storyline_body_classes' );

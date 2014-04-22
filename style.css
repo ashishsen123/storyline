@@ -176,7 +176,7 @@ p, ol, ul, dl, address {
 	margin: 0 0 24px 0;
 	margin: 0 0 1.5rem 0;
 	font-size: 16px;
-	font-size: 1rem;
+	
 	line-height: 1.5;
 }
 
@@ -637,9 +637,10 @@ select {
 
 #headercontainer {
 	width: 1200px;
-	background: #fff;
+	background: #2997ab;
 	margin: 0px auto;
 	margin-top:40px;
+	
 }
 
 .site-header {
@@ -681,7 +682,7 @@ select {
 }
 
 .logo-right p{
-    margin-left:25%;
+    margin-left:6%;
 }
 #bannercontainer {
 	width: 100%;
@@ -690,7 +691,7 @@ select {
 
 .banner {
 	color: #eaeaea;
-	width: 90%;
+	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 15px 0;
@@ -736,7 +737,7 @@ select {
 
 #maincontentcontainer {
 	width: 1200px;
-	margin:0px auto;
+	margin: -25px auto;
 }
 
 .site-content {
@@ -1496,7 +1497,7 @@ form label.error {
 #footercontainer {
 	width: 1200px;
         margin:0px auto;
-        background:#1b5f7d;
+        background:#2997ab;
         padding:10px;
         clear:both;
 }
@@ -1983,7 +1984,7 @@ li span.dots {
 .main-navigation .current-menu-ancestor > a,
 .main-navigation .current_page_item > a,
 .main-navigation .current_page_ancestor > a {
-	color: #2997ab; /* Nav bar link color for current menu item or ancestor */
+	color: #333; /* Nav bar link color for current menu item or ancestor */
 }
 
 .main-navigation ul .divider {
@@ -2204,3 +2205,80 @@ li span.dots {
 	clear:both;
 	display:block;
 	}
+
+	
+.banner-container img{
+		width:100%;
+		}
+.home-container{
+			width:100%;
+			}
+.home-widget1{
+				float:left;
+				width:32%;
+				margin-left:15px;
+				}
+.home-widget2{
+				float:left;
+				width:32%;
+				margin-left:15px;
+				padding-left:10px;
+				}
+.home-widget3{
+				float:left;
+				width:32%;
+				margin-left:15px;
+				padding-left:20px;
+				}	
+.place-container1{
+	margin-top:25px;
+}
+.place-widget2{
+	width:90%;
+	float:left;
+	}
+.storyline-box #wrapper{
+						max-width:900px;
+						margin:0px auto;
+}
+.storyline-box #headercontainer{
+				width:auto;
+			}
+.storyline-box #maincontentcontainer{
+						width:auto;
+						margin:0px auto;
+}
+
+.storyline-box #footercontainer{
+			width:auto;
+			}
+.storyline-box .home-container{
+			width:100%;
+			}
+.storyline-box .home-widget1{
+				float:left;
+				width:32%;
+				margin-left:15px;
+				}
+.storyline-box .home-widget2{
+				float:left;
+				width:32%;
+				margin-left:15px;
+				}
+.storyline-box .home-widget3{
+				float:left;
+				width:31%;
+				margin-left:15px;
+				}				
+.storyline-box .main-navigation li{
+							margin:0 0 0 10px;
+							}
+#post-26 .entry-header h1{
+								padding-top:30px;
+								}
+#post-24 .entry-header h1{
+								padding-top:30px;
+								}							
+.grid_4_of_12 {
+								padding-left:30px;
+								}

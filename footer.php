@@ -16,12 +16,17 @@
 	<div id="footercontainer">
 
 		<footer class="site-footer row" role="contentinfo">
-                    <div class="footer-left">
-                        <p>Copyright © 2014 <a href="">Theme Preview</a>. All Rights Reserved.</p>
-                       </div>
-                    <div class="footer-right">
-                        <p>Powered by: <a href="">WordPress</a> | Theme: <a href="">Catch Kathmandu</a></p>
-                       </div>
+                     <?php if (get_theme_mod('storyline_footer_footer_text') == '') { ?>
+            <div class="row smallprint">
+                <p>
+                    <a href="<?php $my_theme = wp_get_theme(); echo $my_theme->get( 'ThemeURI' ); ?>">
+                        <?php _e('storyline WordPress theme by IdeaBox', 'storyline'); ?>
+                    </a>
+                </p>
+            </div>
+        <?php } else { ?>   
+                    <div class="row smallprint"><?php echo wpautop(get_theme_mod('storyline_footer_footer_text')); ?></div>
+        <?php } ?> 
 
 			<?php
 			// Count how many footer sidebars are active so we can work out how many containers we need

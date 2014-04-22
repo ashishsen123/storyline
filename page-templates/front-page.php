@@ -16,21 +16,30 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content row" role="main">
-		<div class="col grid_12_of_12">
+	<div class="banner-container">
+		<div class="banner">
+			<?php dynamic_sidebar('frontpage-banner');
+			?>
+		</div>
+	</div>
+	<div class="home-container">
+		<div class="home-widget1">
+			<?php dynamic_sidebar('home-widget1');
+			?>
+		</div>
+		<div class="home-widget2">
+			<?php dynamic_sidebar('home-widget2');
+			?>
+		</div>
+		<div class="home-widget3">
+			<?php dynamic_sidebar('home-widget3');
+			?>
+		</div>
+	</div>
+	<?php
 
-			<?php if ( have_posts() ) : ?>
-
-				<?php while ( have_posts() ) : the_post(); ?>
-					<?php get_template_part( 'content', 'page' ); ?>
-					<?php comments_template( '', true ); ?>
-				<?php endwhile; // end of the loop. ?>
-
-			<?php endif; // end have_posts() check ?>
-
-		</div> <!-- /.col.grid_12_of_12 -->
-
-	</div><!-- /#primary.site-content.row -->
-	<?php get_sidebar( 'front' ); ?>
-
+            // Display featured posts on front page
+            get_template_part('content', 'frontposts');
+            ?>
+	
 <?php get_footer(); ?>
