@@ -294,7 +294,7 @@ function storyline_widgets_init() {
 	
 	
 	register_sidebar( array(
-			'name' => esc_html__( 'Footer Widget Area', 'storyline' ),
+			'name' => esc_html__( 'First Footer Widget Area', 'storyline' ),
 			'id' => 'sidebar-footer1',
 			'description' => esc_html__( 'Appears in the footer sidebar', 'storyline' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -302,6 +302,33 @@ function storyline_widgets_init() {
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>'
 		) );
+	register_sidebar( array(
+			'name' => esc_html__( 'Second Footer Widget Area', 'storyline' ),
+			'id' => 'sidebar-footer2',
+			'description' => esc_html__( 'Appears in the footer sidebar', 'storyline' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		) );
+register_sidebar( array(
+			'name' => esc_html__( 'Third Footer Widget Area', 'storyline' ),
+			'id' => 'sidebar-footer3',
+			'description' => esc_html__( 'Appears in the footer sidebar', 'storyline' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		) );	
+register_sidebar( array(
+			'name' => esc_html__( 'fourth Footer Widget Area', 'storyline' ),
+			'id' => 'sidebar-footer4',
+			'description' => esc_html__( 'Appears in the footer sidebar', 'storyline' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		) );			
 }
 add_action( 'widgets_init', 'storyline_widgets_init' );
 

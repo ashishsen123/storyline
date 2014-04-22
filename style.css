@@ -683,6 +683,7 @@ select {
 
 .logo-right p{
     margin-left:6%;
+	padding-bottom:10px;
 }
 #bannercontainer {
 	width: 100%;
@@ -2282,3 +2283,17 @@ li span.dots {
 .grid_4_of_12 {
 								padding-left:30px;
 								}
+.grid_3_of_12{
+						width:23%;
+							}
+#meta-2.widget_meta {
+						margin-left:15px;
+						}	
+#footercontainer:after{
+			content:'.';
+			visibility:hidden;
+			display:block;
+			clear:both;
+			}
+				
+}				

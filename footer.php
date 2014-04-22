@@ -16,17 +16,7 @@
 	<div id="footercontainer">
 
 		<footer class="site-footer row" role="contentinfo">
-                     <?php if (get_theme_mod('storyline_footer_footer_text') == '') { ?>
-            <div class="row smallprint">
-                <p>
-                    <a href="<?php $my_theme = wp_get_theme(); echo $my_theme->get( 'ThemeURI' ); ?>">
-                        <?php _e('storyline WordPress theme by IdeaBox', 'storyline'); ?>
-                    </a>
-                </p>
-            </div>
-        <?php } else { ?>   
-                    <div class="row smallprint"><?php echo wpautop(get_theme_mod('storyline_footer_footer_text')); ?></div>
-        <?php } ?> 
+            
 
 			<?php
 			// Count how many footer sidebars are active so we can work out how many containers we need
@@ -57,6 +47,19 @@
 			<?php } ?>
 
 		</footer> <!-- /.site-footer.row -->
+		         <?php if (get_theme_mod('storyline_footer_footer_text') == '') { ?>
+			 <div class="foot">	
+            <div class="row smallprint left">
+                <p>
+                    <a href="<?php $my_theme = wp_get_theme(); echo $my_theme->get( 'ThemeURI' ); ?>">
+                        <?php _e('storyline WordPress theme by IdeaBox', 'storyline'); ?>
+                    </a>
+                </p>
+            </div>
+        <?php } else { ?>   
+                    <div class="row smallprint right"><?php echo wpautop(get_theme_mod('storyline_footer_footer_text')); ?></div>
+			</div>		
+        <?php } ?> 
 
 		<?php if ( of_get_option( 'footer_content', storyline_get_credits() ) ) {
 			echo '<div class="row smallprint">';
